@@ -1,6 +1,6 @@
 # Example Project
 
-This is a repository for my project on the topological properties of actinide pyrochlores under strain. The preprint is available on arXiv (arxiv:7212.12345).
+This is a repository for my project on the  properties of actinide pyrochlores under strain. The preprint is available on arXiv (arxiv:7212.12345).
 
 ## Computational Info
 All work in this repository was performed by me, except for the slab calculations (Spike Spiegel, Griffin Group), and the calculation of the MCAE (Dr. Jet Black, Bebop Group, Mars Autonomous University). All calculations were performed on the Swordfish II cluster at the University of Ganymede. We used VASP version 11.7.5 with the SecretNuclearWeapons patch (version 0.5) available for free on GitHub. We found that using more than 25 thousand GPUs with these calculations leads to a variety of MPI-related crashes, but the parallelism settings in the job script and `INCAR` should work fine.
