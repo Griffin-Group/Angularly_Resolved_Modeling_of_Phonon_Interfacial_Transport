@@ -1,0 +1,17 @@
+System    = Nb
+
+ISTART    = 0  
+ICHARG    = 2    
+
+PREC      = Accurate
+EDIFF     = 1E-8
+EDIFFG    = -0.00001
+
+ENCUT     = 600
+ISMEAR    = 1  
+SIGMA     = 0.01
+
+NELM      = 200
+
+NCORE     = 4
+

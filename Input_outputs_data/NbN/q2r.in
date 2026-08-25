@@ -1,0 +1,4 @@
+--
+&input
+  zasr='crystal', fildyn='nbn.dyn', flfrc='nbn.fc'
+/

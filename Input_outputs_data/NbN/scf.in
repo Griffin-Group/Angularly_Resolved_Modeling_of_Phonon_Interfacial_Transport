@@ -1,0 +1,46 @@
+&control
+    calculation      = 'scf'
+    restart_mode     = 'from_scratch'
+    prefix           = 'nbn'
+    pseudo_dir       = '/pscratch/sd/m/mhussien/NbN/2025/All_data/bulk-press-epi/pristine/June_06/pseudo'
+    outdir           = './'
+/
+&system
+    ibrav           = 0
+    nat             = 8
+    ntyp            = 2
+    ecutwfc         = 100
+    ecutrho         = 400 
+    occupations     = 'smearing'
+    smearing        = 'mv'
+    degauss         = 0.005
+/
+&electrons
+    diagonalization  = 'david'
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.3
+    conv_thr         = 1.0d-11
+    electron_maxstep = 300
+/ 
+&IONS 
+/
+ATOMIC_SPECIES
+    Nb 92.91   Nb_pbe.upf
+    N  14.01   N_pbe.upf
+ CELL_PARAMETERS (angstrom)
+   4.422386913  -0.000000000   0.000000000
+   0.000000000   4.422386913   0.000000000
+  -0.000000000  -0.000000000   4.422386913
+
+ATOMIC_POSITIONS (crystal)
+Nb               0.2327065127        0.7672934873        0.2327065127
+Nb               0.7672934873        0.2327065127        0.2327065127
+Nb               0.7672934873        0.7672934873        0.7672934873
+Nb               0.2327065127        0.2327065127        0.7672934873
+N                0.7348907383        0.2651092617        0.7348907383
+N                0.2651092617        0.7348907383        0.7348907383
+N                0.2651092617        0.2651092617        0.2651092617
+N                0.7348907383        0.7348907383        0.2651092617
+K_POINTS automatic
+18 18 18  0 0 0
+

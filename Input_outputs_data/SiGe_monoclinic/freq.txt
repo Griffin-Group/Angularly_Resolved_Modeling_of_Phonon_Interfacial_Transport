@@ -1,0 +1,18 @@
+--
+&input
+  asr              = 'simple',
+  flfrc            = 'sige.fc'
+  flfrq            = 'sige.freq'
+  q_in_band_form   = .true.
+  q_in_cryst_coord = .true.
+/
+  8
+  0.000 0.000 0.000  100 !G
+  0.0 0.5  0.0   100 !Z
+  0.0 0.5 0.5        100 !D
+  0.0 0.0 0.5        100 !B
+  0.000 0.000 0.000  100 !G
+ -0.5 0.0 0.5        100 !A
+ -0.5 0.5 0.5    100 !E
+  0.0 0.5 0.0        100 !Z
+ 
