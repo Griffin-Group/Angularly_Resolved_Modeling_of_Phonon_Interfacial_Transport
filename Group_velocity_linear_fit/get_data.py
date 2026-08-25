@@ -2,7 +2,7 @@ import yaml
 import numpy as np
 
 INFILE  = "band.yaml"
-OUTFILE = "qdistance_freq_p-43m_GX_20.txt"
+OUTFILE = "qdistance_freq_p-43m_GX_20_1.txt"
 N_POINTS = 20
 
 with open(INFILE, "r") as f:
