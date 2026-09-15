@@ -1,14 +1,21 @@
-Here is a README summary:
+# Code and Data for “Theoretical Design of Phonon Filters for Quantum Sensing and Qubits”
 
----
+This repository contains the code, input data, calculated results, and
+figure-generation materials supporting the manuscript:
 
-# Acoustic Mismatch Model (AMM) for Phonon Transmission
+> **Theoretical Design of Phonon Filters for Quantum Sensing and Qubits**
 
-## Overview
+**Manuscript status:** In preparation
 
-This repository implements the Acoustic Mismatch Model (AMM) to calculate phonon transmission coefficients and interfacial heat transfer across material interfaces relevant to superconducting qubit devices (e.g., Nb/SiGe, NbN/SiGe, Al/SiGe). The code computes angular-resolved transmission probabilities α(θ), effective transmission T_eff, and Kapitza conductance q (W/m²/K) from first-principles phonon data.
+The computational workflow implements an angularly resolved Acoustic Mismatch
+Model (AMM) for phonon transmission and interfacial thermal transport. It is
+used to calculate branch- and angle-resolved transmission probabilities,
+effective transmission coefficients, and Kapitza conductance for material
+interfaces relevant to superconducting quantum devices.
 
----
+This repository is a pre-submission research release. The contents may be
+updated before or during peer review.
+
 
 ## Physics
 
@@ -86,3 +93,23 @@ Lightweight version requiring no phonopy — takes density and TA/LA group veloc
 - The TA and LA critical angles are in **opposite directions** when the velocity ordering flips between polarizations (e.g., v_LA(SiGe) > v_LA(NbN) but v_TA(SiGe) < v_TA(NbN)). This is physical, not a bug.
 - Transmission is **not symmetric**: q(1→2) ≠ q(2→1) because the source DOS differs. Run both directions explicitly.
 - Temperature is set to **50 mK** by default, relevant for superconducting qubit operating conditions.
+
+## Installation
+
+### Requirements
+
+- Python 3.11
+- NumPy
+- Matplotlib
+- Phonopy
+- h5py
+- Jupyter
+
+Create the environment using:
+
+```bash
+git clone https://github.com/Griffin-Group/Angularly_Resolved_Modeling_of_Phonon_Interfacial_Transport.git
+cd Angularly_Resolved_Modeling_of_Phonon_Interfacial_Transport
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
