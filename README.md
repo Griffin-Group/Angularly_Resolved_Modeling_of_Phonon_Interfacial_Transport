@@ -1,5 +1,3 @@
-Here is a README summary:
-
 # Code and Data for “Theoretical Design of Phonon Filters for Quantum Sensing and Qubits”
 
 This repository contains the code, input data, calculated results, and
