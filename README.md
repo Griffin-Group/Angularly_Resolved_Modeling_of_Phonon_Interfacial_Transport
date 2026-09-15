@@ -93,3 +93,23 @@ Lightweight version requiring no phonopy — takes density and TA/LA group veloc
 - The TA and LA critical angles are in **opposite directions** when the velocity ordering flips between polarizations (e.g., v_LA(SiGe) > v_LA(NbN) but v_TA(SiGe) < v_TA(NbN)). This is physical, not a bug.
 - Transmission is **not symmetric**: q(1→2) ≠ q(2→1) because the source DOS differs. Run both directions explicitly.
 - Temperature is set to **50 mK** by default, relevant for superconducting qubit operating conditions.
+
+## Installation
+
+### Requirements
+
+- Python 3.11
+- NumPy
+- Matplotlib
+- Phonopy
+- h5py
+- Jupyter
+
+Create the environment using:
+
+```bash
+git clone https://github.com/Griffin-Group/Angularly_Resolved_Modeling_of_Phonon_Interfacial_Transport.git
+cd Angularly_Resolved_Modeling_of_Phonon_Interfacial_Transport
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
