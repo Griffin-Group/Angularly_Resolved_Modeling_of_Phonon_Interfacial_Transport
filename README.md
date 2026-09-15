@@ -1,14 +1,23 @@
 Here is a README summary:
 
----
+# Code and Data for “Theoretical Design of Phonon Filters for Quantum Sensing and Qubits”
 
-# Acoustic Mismatch Model (AMM) for Phonon Transmission
+This repository contains the code, input data, calculated results, and
+figure-generation materials supporting the manuscript:
 
-## Overview
+> **Theoretical Design of Phonon Filters for Quantum Sensing and Qubits**
 
-This repository implements the Acoustic Mismatch Model (AMM) to calculate phonon transmission coefficients and interfacial heat transfer across material interfaces relevant to superconducting qubit devices (e.g., Nb/SiGe, NbN/SiGe, Al/SiGe). The code computes angular-resolved transmission probabilities α(θ), effective transmission T_eff, and Kapitza conductance q (W/m²/K) from first-principles phonon data.
+**Manuscript status:** In preparation
 
----
+The computational workflow implements an angularly resolved Acoustic Mismatch
+Model (AMM) for phonon transmission and interfacial thermal transport. It is
+used to calculate branch- and angle-resolved transmission probabilities,
+effective transmission coefficients, and Kapitza conductance for material
+interfaces relevant to superconducting quantum devices.
+
+This repository is a pre-submission research release. The contents may be
+updated before or during peer review.
+
 
 ## Physics
 
