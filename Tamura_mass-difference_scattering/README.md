@@ -1,20 +1,18 @@
-## The physics, in brief
+## Tamura mass-difference scattering
 
-Two mechanisms are combined:
+ In this mechanism, random mass substitution in the SiGe alloy scatters phonons at a rate
 
-1. **Acoustic Mismatch Model (AMM)** — phonons are treated as plane waves that
-   refract specularly at interfaces (Snell's law). The interface energy
-   transmission is set by the acoustic-impedance contrast,
-   `alpha = 1 - R` with `R = ((Z1 cos θ1 - Z2 cos θ2)/(Z1 cos θ1 + Z2 cos θ2))^2`
-   (`Z = ρc`). This gives the angular and polarization dependence (Figs. 5, 6, S1).
+$$\[
+\tau_{\mathrm{md}}^{-1}(\omega)\propto \omega^2D(\omega),
+\]$$
 
-2. **Tamura mass-difference scattering** — random mass substitution in the SiGe
-   alloy scatters phonons at a rate `∝ ω² D(ω)`, yielding a frequency-dependent
-   mean free path `Λ(ω)`. The scattering layer is then solved as a phonon
-   radiative-transport problem (the phonon analogue of the radiative transfer
-   equation) with the discrete-ordinates solver **PythonicDISORT** (D. J. X.
-   Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum
-   (Figs. 2, 3, 4, S6, S7, S8).
+resulting in a frequency-dependent mean free path,
+
+$$\[
+\Lambda(\omega)=v_g(\omega)\tau_{\mathrm{md}}(\omega).
+\]$$
+
+The scattering layer is then treated as a phonon radiative-transport problem—the phonon analogue of the radiative transfer equation—and solved using the discrete-ordinates package **PythonicDISORT** (D. J. X. Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum shown in Figs. 2, 3, 4, S6, S7, and S8.
 
 The cumulative transmittance is the product of the AMM (angular) and
 scattering (spectral & angular) contributions.
@@ -59,7 +57,7 @@ sweep = transport.flux_albedo_sweep(mfp_tr, [0.001, 0.5, 0.99, 0.999999], L_um=1
 figures.figure4(nu_Hz / 1e9, sweep, [0.001, 0.5, 0.99, 0.999999])
 ```
 
-## Repository layout
+## The layout of this part
 
 ```
 phonon_filters/        importable package
