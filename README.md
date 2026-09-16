@@ -19,15 +19,24 @@ updated before or during peer review.
 
 ## Physics
 
-The AMM assumes specular (coherent) phonon scattering at a planar interface. For each acoustic branch i (TA1, TA2, LA), the transmission coefficient is given by:
+Two mechanisms are combined:
 
-$$\alpha_i = 1 - \left(\frac{Z_1\cos\theta_1 - Z_2\cos\theta_2}{Z_1\cos\theta_1 + Z_2\cos\theta_2}\right)^2$$
+1. **Acoustic Mismatch Model (AMM)** — phonons are treated as plane waves that
+   refract specularly at interfaces (Snell's law). The interface energy
+   transmission is set by the acoustic-impedance contrast,
+   `alpha = 1 - R` with `R = ((Z1 cos θ1 - Z2 cos θ2)/(Z1 cos θ1 + Z2 cos θ2))^2`
+   (`Z = ρc`). This gives the angular and polarization dependence (Figs. 5, 6, S1).
 
-where Z = ρv is the acoustic impedance and θ₂ is the refraction angle from Snell's law (v₂/v₁ = sinθ₂/sinθ₁). Total internal reflection is handled automatically when sinθ₂ > 1. The interfacial heat flux is then:
+2. **Tamura mass-difference scattering** — random mass substitution in the SiGe
+   alloy scatters phonons at a rate `∝ ω² D(ω)`, yielding a frequency-dependent
+   mean free path `Λ(ω)`. The scattering layer is then solved as a phonon
+   radiative-transport problem (the phonon analogue of the radiative transfer
+   equation) with the discrete-ordinates solver **PythonicDISORT** (D. J. X.
+   Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum
+   (Figs. 2, 3, 4, S6, S7, S8).
 
-$$q = \frac{1}{2}\sum_i v_i \int_0^{\omega_c}\int_0^1 \hbar\omega\, D_i(\omega)\,\alpha_i(\omega,\mu)\,\frac{\partial f}{\partial T}\,\mu\,d\mu\,d\omega$$
-
-giving q in units of W m⁻² K⁻¹ (Kapitza conductance).
+The cumulative transmittance is the product of the AMM (angular) and
+scattering (spectral & angular) contributions.
 
 ---
 ## Installation
