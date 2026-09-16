@@ -1,0 +1,26 @@
+/Users/mhussien/.local/bin/sumo-kgen --seekpath
+Structure information:
+	Space group number: 225
+	International symbol: Fm-3m
+	Lattice type: cubic
+
+k-point path:
+	\Gamma -> X -> U | K -> \Gamma -> L -> W -> X
+
+k-points:
+	W: 0.5 0.25 0.75
+	K: 0.375 0.375 0.75
+	U: 0.625 0.25 0.625
+	L: 0.5 0.5 0.5
+	X: 0.5 0.0 0.5
+	\Gamma: 0.0 0.0 0.0
+
+k-point label indices:
+	\Gamma: 1
+	X: 95
+	U: 128
+	K: 129
+	\Gamma: 228
+	L: 309
+	W: 375
+	X: 422
