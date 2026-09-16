@@ -102,6 +102,7 @@ Lightweight version requiring no phonopy — takes density and TA/LA group veloc
 - NumPy
 - Matplotlib
 - Phonopy
+- scipy
 - h5py
 - Jupyter
 
