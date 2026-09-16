@@ -3,7 +3,7 @@
 This repository contains the code, input data, calculated results, and
 figure-generation materials supporting the manuscript:
 
-> **Theoretical Design of Phonon Filters for Quantum Sensing and Qubits**
+> **Theoretical Design of Phonon Filters for Quantum Sensing and Qubits** by Mathan R. K, Musa A. M. Hussien, Sean Lubner, and Sinead M. Griffin
 
 **Manuscript status:** In preparation
 
