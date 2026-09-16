@@ -1,0 +1,7 @@
+# Runtime dependencies for the phonon_filters package.
+# Versions below are those the reproduction was validated against; the lower
+# bounds are conservative and newer releases are expected to work.
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.6
+PythonicDISORT>=1.7
