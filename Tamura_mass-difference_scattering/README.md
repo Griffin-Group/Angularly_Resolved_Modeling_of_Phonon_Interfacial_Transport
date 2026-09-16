@@ -1,16 +1,3 @@
-# Phonon Filters for Quantum Sensing and Qubits
-
-Reproducible calculations and figures for
-
-> **Theoretical Design of Phonon Filters for Quantum Sensing and Qubits**
-> M. R. Krisshnamurthi, M. A. Hussien, S. Lubner, S. M. Griffin.
-
-This repository computes the frequency-, angle-, and polarization-dependent
-phonon transmittance of a Si / SiGe / Al (or Nb) layer stack, demonstrating how
-a SiGe scattering layer acts as a sharp phonon filter that blocks pair-breaking
-athermal phonons while passing thermal phonons. Every Python-generated figure in
-the manuscript can be regenerated from the bundled inputs with one command.
-
 ## The physics, in brief
 
 Two mechanisms are combined:
