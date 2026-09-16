@@ -17,7 +17,7 @@ This repository is a pre-submission research release. The contents may be
 updated before or during peer review.
 
 
-## Physics
+# Physics
 
 Two mechanisms are combined:
 
@@ -51,11 +51,17 @@ $$\[
 
 The scattering layer is then treated as a phonon radiative-transport problem—the phonon analogue of the radiative transfer equation—and solved using the discrete-ordinates package **PythonicDISORT** (D. J. X. Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum shown in Figs. 2, 3, 4, S6, S7, and S8.
 
+# Repository Overview
+1. AMM_jupyter-notebooks
+2. Group_velocites_LA_TA
+3. Inputs_outputs_data
+4. Tamura_mass_difference_scattering
+5. Transmission_coefficients_alpha
+6. Figures
 
----
-## Installation
+# Installation
 
-### Requirements
+## Requirements
 
 - Python 3.11
 - NumPy
