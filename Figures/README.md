@@ -1,1 +1,6 @@
-These two folders contain all figures presented in the main text and Supplemetary Information.
+# Manuscript Figures
+
+These folders contain all figures presented in the manuscript:
+
+- `main_text/` — figures in the main text
+- `SI/` — figures in the Supplementary Information
