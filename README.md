@@ -52,12 +52,18 @@ $$\[
 The scattering layer is then treated as a phonon radiative-transport problem—the phonon analogue of the radiative transfer equation—and solved using the discrete-ordinates package **PythonicDISORT** (D. J. X. Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum shown in Figs. 2, 3, 4, S6, S7, and S8.
 
 # Repository Overview
-1. AMM_jupyter-notebooks
-2. Group_velocites_LA_TA
-3. Inputs_outputs_data
-4. Tamura_mass_difference_scattering
-5. Transmission_coefficients_alpha
-6. Figures
+
+1. **`AMM_jupyter-notebooks`**: Contains the Acoustic Mismatch Model (AMM) code, including an example calculation of the interfacial heat flux \(q\) between Si and Al.
+
+2. **`Group_velocites_LA_TA`**: Contains the raw group-velocity data reported in this work, along with linear fits and their slopes for each material and propagation direction studied.
+
+3. **`Inputs_outputs_data`**: Contains the DFT input and output files for all investigated materials, including the data used to plot the phonon dispersions.
+
+4. **`Tamura_mass_difference_scattering`**: Demonstrates how DFT data are used as input to the Tamura mass-difference scattering model for the SiGe layer and how the frequency-dependent transmittance is calculated.
+
+5. **`Transmission_coefficients_alpha`**: Demonstrates how the AMM is used to calculate angle- and polarization-dependent transmission coefficients in both the forward and reverse directions.
+
+6. **`Figures`**: Contains all figures presented in the main text and Supplementary Information (SI) of the associated manuscript.
 
 # Installation
 
