@@ -1,4 +1,4 @@
-# Code and Data for “Theoretical Design of Phonon Filters for Quantum Sensing and Qubits”
+# Theoretical Design of Phonon Filters for Quantum Sensing and Qubits
 
 This repository contains the code, input data, calculated results, and
 figure-generation materials supporting the manuscript:
@@ -7,11 +7,11 @@ figure-generation materials supporting the manuscript:
 
 **Manuscript status:** In preparation
 
-The computational workflow implements an angularly resolved Acoustic Mismatch
-Model (AMM) for phonon transmission and interfacial thermal transport. It is
-used to calculate branch- and angle-resolved transmission probabilities,
-effective transmission coefficients, and Kapitza conductance for material
-interfaces relevant to superconducting quantum devices.
+The computational workflow computes the frequency-, angle-, and polarization-dependent
+phonon transmittance of a Si / SiGe / Al (or Nb or NbN) layer stack, demonstrating how
+a SiGe scattering layer acts as a sharp phonon filter that blocks pair-breaking
+athermal phonons while passing thermal phonons. Every Python-generated figure in
+the manuscript can be regenerated from the bundled inputs with one command.
 
 This repository is a pre-submission research release. The contents may be
 updated before or during peer review.
