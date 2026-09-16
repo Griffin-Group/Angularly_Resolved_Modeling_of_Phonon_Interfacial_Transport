@@ -21,19 +21,35 @@ updated before or during peer review.
 
 Two mechanisms are combined:
 
-1. **Acoustic Mismatch Model (AMM)** — phonons are treated as plane waves that
-   refract specularly at interfaces (Snell's law). The interface energy
-   transmission is set by the acoustic-impedance contrast,
-   `alpha = 1 - R` with `R = ((Z1 cos θ1 - Z2 cos θ2)/(Z1 cos θ1 + Z2 cos θ2))^2`
-   (`Z = ρc`). This gives the angular and polarization dependence (Figs. 5, 6, S1).
+1. **Acoustic Mismatch Model (AMM)** — Phonons are treated as plane waves that refract specularly at interfaces according to Snell’s law, \(\sin\theta_1/c_1 = \sin\theta_2/c_2\). The interface energy transmission is determined by the acoustic-impedance contrast:
 
-2. **Tamura mass-difference scattering** — random mass substitution in the SiGe
-   alloy scatters phonons at a rate `∝ ω² D(ω)`, yielding a frequency-dependent
-   mean free path `Λ(ω)`. The scattering layer is then solved as a phonon
-   radiative-transport problem (the phonon analogue of the radiative transfer
-   equation) with the discrete-ordinates solver **PythonicDISORT** (D. J. X.
-   Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum
-   (Figs. 2, 3, 4, S6, S7, S8).
+\[
+\alpha = 1-R,
+\qquad
+R =
+\left(
+\frac{Z_1\cos\theta_1-Z_2\cos\theta_2}
+     {Z_1\cos\theta_1+Z_2\cos\theta_2}
+\right)^2,
+\qquad
+Z=\rho c.
+\]
+
+This formulation captures the angular and polarization dependence shown in Figs. 5, 6, and S1.
+
+2. **Tamura mass-difference scattering** — Random mass substitution in the SiGe alloy scatters phonons at a rate
+
+\[
+\tau_{\mathrm{md}}^{-1}(\omega)\propto \omega^2D(\omega),
+\]
+
+resulting in a frequency-dependent mean free path,
+
+\[
+\Lambda(\omega)=v_g(\omega)\tau_{\mathrm{md}}(\omega).
+\]
+
+The scattering layer is then treated as a phonon radiative-transport problem—the phonon analogue of the radiative transfer equation—and solved using the discrete-ordinates package **PythonicDISORT** (D. J. X. Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum shown in Figs. 2, 3, 4, S6, S7, and S8.
 
 The cumulative transmittance is the product of the AMM (angular) and
 scattering (spectral & angular) contributions.
