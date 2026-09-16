@@ -23,7 +23,7 @@ Two mechanisms are combined:
 
 1. **Acoustic Mismatch Model (AMM)** — Phonons are treated as plane waves that refract specularly at interfaces according to Snell’s law, \(\sin\theta_1/c_1 = \sin\theta_2/c_2\). The interface energy transmission is determined by the acoustic-impedance contrast:
 
-\[
+$$\[
 \alpha = 1-R,
 \qquad
 R =
@@ -33,21 +33,21 @@ R =
 \right)^2,
 \qquad
 Z=\rho c.
-\]
+\]$$
 
 This formulation captures the angular and polarization dependence shown in Figs. 5, 6, and S1.
 
 2. **Tamura mass-difference scattering** — Random mass substitution in the SiGe alloy scatters phonons at a rate
 
-\[
+$$\[
 \tau_{\mathrm{md}}^{-1}(\omega)\propto \omega^2D(\omega),
-\]
+\]$$
 
 resulting in a frequency-dependent mean free path,
 
-\[
+$$\[
 \Lambda(\omega)=v_g(\omega)\tau_{\mathrm{md}}(\omega).
-\]
+\]$$
 
 The scattering layer is then treated as a phonon radiative-transport problem—the phonon analogue of the radiative transfer equation—and solved using the discrete-ordinates package **PythonicDISORT** (D. J. X. Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum shown in Figs. 2, 3, 4, S6, S7, and S8.
 
