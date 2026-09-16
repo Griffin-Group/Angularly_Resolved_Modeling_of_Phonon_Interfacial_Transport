@@ -51,8 +51,6 @@ $$\[
 
 The scattering layer is then treated as a phonon radiative-transport problem—the phonon analogue of the radiative transfer equation—and solved using the discrete-ordinates package **PythonicDISORT** (D. J. X. Ho; `pip install PythonicDISORT`) to obtain the transmittance spectrum shown in Figs. 2, 3, 4, S6, S7, and S8.
 
-The cumulative transmittance is the product of the AMM (angular) and
-scattering (spectral & angular) contributions.
 
 ---
 ## Installation
