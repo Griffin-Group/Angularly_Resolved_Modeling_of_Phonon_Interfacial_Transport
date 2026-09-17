@@ -1,0 +1,17 @@
+--
+&input
+  asr              = 'crystal',
+  flfrc            = 'Nb.fc'
+  flfrq            = 'Nb.freq'
+  q_in_band_form   = .true.
+  q_in_cryst_coord = .true.
+/
+  7
+  0.000 0.000 0.000  100 !G
+  0.5 -0.5 0.5       100 !H
+  0.0 0.0 0.5        100 !N
+  0.000 0.000 0.000  100 !G
+  0.25 0.25 0.25     100 !P
+  0.5 -0.5 0.5       100 ! H
+  0.0 0.0 0.5        100 !N
+          

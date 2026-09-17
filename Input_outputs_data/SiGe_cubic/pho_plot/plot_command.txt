@@ -1,0 +1,1 @@
+sumo-phonon-bandplot --born BORN_FILE --legend SiGe --format png --dpi 400 --seekpath --dim 4 4 4

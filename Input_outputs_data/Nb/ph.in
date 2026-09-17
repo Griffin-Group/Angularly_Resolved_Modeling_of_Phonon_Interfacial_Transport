@@ -1,0 +1,13 @@
+--
+&inputph
+  prefix    = 'Nb'
+  fildvscf  = 'dvscf'
+  ldisp     = .true
+  alpha_mix(1)= 0.5
+  recover   = .true.
+  fildyn    = 'Nb.dyn'
+  nq1=6,
+  nq2=6,
+  nq3=6,
+  tr2_ph   =  1.0d-16
+ /
