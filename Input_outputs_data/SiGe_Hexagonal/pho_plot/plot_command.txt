@@ -1,0 +1,1 @@
+sumo-phonon-bandplot --filename FORCE_SETS --legend SiGe --format png --dpi 400 --seekpath --dim 4 4 4

@@ -1,0 +1,1 @@
+sumo-phonon-bandplot --filename FORCE_CONSTANTS --format png --dpi 400 --seekpath --dim 6 6 6

@@ -1,0 +1,2 @@
+sumo-phonon-bandplot  --filename FORCE_CONSTANTS --format png --dpi 400 --seekpath --dim 4 4 4 --style color.config --kpoints "0 0 0, 0.0 0.5 0.0, 0.5 0.5 0.0, 0 0 0, 0.5 0.5 0.5, 0.0 0.5 0.0" \
+                      --labels "\Gamma, X, M, \Gamma, R, X"

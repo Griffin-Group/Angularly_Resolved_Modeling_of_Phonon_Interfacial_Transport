@@ -1,10 +1,9 @@
 System    = SiGe
-LREAL     = Auto
 
 ISTART    = 0  
 ICHARG    = 2    
 
-!PREC      = Accurate
+PREC      = Accurate
 EDIFF     = 1E-8
 
 

@@ -1,0 +1,1 @@
+sumo-phonon-bandplot  --filename FORCE_SETS --BORN_FILE --format png --dpi 400 --dim 5 5 5 --style color.config 
